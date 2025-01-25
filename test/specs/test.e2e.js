@@ -12,4 +12,3 @@ describe('My Login application', () => {
             expect.stringContaining('You logged into a secure area!'))
     })
 })
-
