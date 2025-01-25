@@ -1,12 +1,10 @@
-export const config: WebdriverIO.Config = {
+exports.config = {
     //
     // ====================
     // Runner Configuration
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    tsConfigPath: './tsconfig.json',
-    
     //
     // ==================
     // Specify Test Files
@@ -23,7 +21,7 @@ export const config: WebdriverIO.Config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*.ts'
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -52,7 +50,7 @@ export const config: WebdriverIO.Config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'MicrosoftEdge'
+        browserName: 'chrome'
     }],
 
     //

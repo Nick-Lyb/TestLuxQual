@@ -1,10 +1,25 @@
 {
-  "name": "TestWebDrIO",
-  "type": "module",
+  "name": "testluxqual",
+  "version": "1.0.0",
+  "main": "213.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick-Lyb/TestLuxQual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nick-Lyb/TestLuxQual/issues"
+  },
+  "homepage": "https://github.com/Nick-Lyb/TestLuxQual#readme",
+  "description": "",
   "devDependencies": {
-    "@wdio/cli": "^9.6.1",
-    "@wdio/local-runner": "^9.6.1",
-    "@wdio/mocha-framework": "^9.5.0",
-    "@wdio/spec-reporter": "^9.5.0"
+    "@wdio/cli": "^9.7.1",
+    "@wdio/local-runner": "^9.7.1",
+    "@wdio/mocha-framework": "^9.6.4",
+    "@wdio/spec-reporter": "^9.6.3"
   }
 }
