@@ -1,9 +1,8 @@
-const LoginPage = require('../pageobjects/login.page');
+const inventoryPage = require('../pageobjects/inventory.page');
 
 describe('Valid Login Test', () => {
     it('should log in with valid credentials', async () => {
-        await browser.url('https://www.saucedemo.com');
-        await LoginPage.login('standard_user', 'secret_sauce');
+        await inventoryPage.open();
     });
 
     it('add to cart, cart, checkout, fname, sname, postal, continue, finish, back', async () => {
