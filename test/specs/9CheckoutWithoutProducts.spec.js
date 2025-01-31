@@ -7,9 +7,6 @@ describe('cheackout without products', () => {
         await checkoutPage.checkout();
     });
     it('should display "cart is empty" message', async () => {
-
-        const errorMessage = await $('#cart_error_message');
-        await expect(errorMessage).toBeDisplayed();
-        await expect(errorMessage).toHaveText('cart is empty');
+        await checkoutPage.cartError();
     });
 });

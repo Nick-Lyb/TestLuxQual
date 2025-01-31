@@ -24,7 +24,11 @@ class CheckoutPage {
     async back() {
         await this.backButton.click();
     }
-
+    async cartError() {
+        const errorMessage = await $('#cart_error_message');
+        await expect(errorMessage).toBeDisplayed();
+        await expect(errorMessage).toHaveText('cart is empty');
+    }
 
 
 }
