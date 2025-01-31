@@ -1,4 +1,4 @@
-class loginPage {
+class LoginPage {
     // Selectors
     get usernameField() { return $('#user-name'); }
     get passwordField() { return $('#password'); }
@@ -15,4 +15,4 @@ class loginPage {
     }
 }
 
-module.exports = new loginPage();
+module.exports = new LoginPage();

@@ -1,6 +1,8 @@
 const loginPage = require('./login.page');
 
-class inventoryPage {
+class InventoryPage {
+    get addToCartButton() { return $('#add-to-cart-sauce-labs-backpack'); }
+    get shoppingCartButton() { return $('a[class="shopping_cart_link"]'); }
     get burgerMenu() { return $('#react-burger-menu-btn'); }
     get logoutButton() { return $('#logout_sidebar_link'); }
     get shoppingCartButton() { return $('#shopping_cart_container'); }
@@ -57,5 +59,12 @@ class inventoryPage {
         await this.linkedin.click();
     }
 
+    async addToCart() {
+        await this.addToCartButton.click();
+    }
+
+    async openShoppingCart() {
+        await this.shoppingCartButton.click();
+    }
 }
-module.exports = new inventoryPage();
+module.exports = new InventoryPage();
