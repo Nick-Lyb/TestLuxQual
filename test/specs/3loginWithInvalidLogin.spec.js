@@ -4,6 +4,6 @@ const { GetRandomString } = require('../pageobjects/randomUtil');
 describe('InvalidPass', () => {
     it('valid login invalid pass', async () => {
         await loginPage.open();
-        await loginPage.login('standard_user', (GetRandomString(10)));
+        await loginPage.login(GetRandomString(10), 'secret_sauce');
     });
 });

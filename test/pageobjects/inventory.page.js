@@ -14,7 +14,7 @@ class inventoryPage {
         await loginPage.login('standard_user', 'secret_sauce');
     }
 
-    async burger() {
+    async openBurger() {
         await this.burgerMenu.click();
     }
 
