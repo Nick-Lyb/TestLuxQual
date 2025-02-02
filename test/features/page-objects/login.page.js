@@ -1,9 +1,17 @@
+// Локатори
+const selectors = {
+    usernameInput: '#user-name',
+    passwordInput: '#password',
+    loginButton: '#login-button',
+    errorMessage: '[data-test="error"]'
+};
+
 class LoginPage {
     // Локатори
-    usernameInput = $('#user-name');
-    passwordInput = $('#password');
-    loginButton = $('#login-button');
-    errorMessage = $('[data-test="error"]');
+    usernameInput = $(selectors.usernameInput);
+    passwordInput = $(selectors.passwordInput);
+    loginButton = $(selectors.loginButton);
+    errorMessage = $(selectors.errorMessage);
 
     async open() {
         await browser.url('https://www.saucedemo.com/');
