@@ -7,7 +7,6 @@ const selectors = {
 };
 
 class LoginPage {
-    // Локатори
     usernameInput = $(selectors.usernameInput);
     passwordInput = $(selectors.passwordInput);
     loginButton = $(selectors.loginButton);
