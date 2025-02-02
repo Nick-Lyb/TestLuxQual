@@ -1,1 +1,1 @@
-Запустіть усі завдання командою в баші    npx wdio run ./wdio.conf.js
+Запустіть усі завдання командою в баші npx wdio run ./wdio.conf.js
